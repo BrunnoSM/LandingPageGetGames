@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GetGames - Landing Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="/Imagens/logo.png" width="100%"> </a>
+                <p class="Icon"><b>GetGames</b></p>
+            </div>
+
+            <ul>
+                <li> <a href="#">HOME</a> </li>
+                <li> <a href="#">LOJA</a> </li>
+                <li> <a href="#">COMUNIDADE</a> </li>
+                <li> <a href="#">SOBRE</a> </li>
+                <li> <a href="#">SUPORTE</a> </li>
+                <li class="lg"> <a href="#">Iniciar Sessão</a> </li>
+            </ul>
+
+            <div class="menu-icon">
+                <img src="/Imagens/menu.png" alt="Menu">
+            </div>
+
+        </nav>
+
+        <main>
+            <div class="main__text">
+                <h1><b>Acesse jogos instantaneamente</b><strong>Nossa plataforma é o destino perfeito para jogar e conversar</strong> </h1>
+                <p>
+                    Temos quase 30.000 jogos, indo de grandes produções até pequenos independentes — com bastante coisa
+                    no meio. Aproveite as promoções exclusivas, atualizações automáticas e outros grandes privilégios.
+                </p>
+                <button>Navegue pela loja →</button>
+
+            </div>
+            <div class="main__img"></div>
+            <img src="/Imagens/game.png" alt="Joysticks">
+
+        </main>
+        <p>Cadastre-se no <strong>GetGames</strong> gratuitamente de forma rápida e simples: </p>
+
+        <main class="main__mail">
+            
+            <div class="div__mail">
+
+                <form class="form__mail" action="mailto:nome@email.com.br" method="post" enctype="text/plain">
+                    
+                    <label>Seu E-mail:</label>
+                    <input name="email" type="email" placeholder="Digite seu email" required/><br/>
+                    <label>Sua Senha:</label>
+                    <input name="nome" type="text" placeholder="Digite sua senha" required/><br/>
+                    <label>Confirmar Senha:</label>
+                    <input name="nome" type="text" placeholder="Digite novamente sua senha" required/><br/>
+                    <input class="input__submit" type="submit" value="Cadastre-se"/>
+
+                </form>
+               
+            </div>
+        </main>
+
+    </div>
+
+    <script>
+        var menu = document.querySelector('nav ul');
+        var menuIcon = document.querySelector('nav .menu-icon');
+        var menuIconImg = document.querySelector('nav .menu-icon img');
+
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('ativo');
+            if (menuIconImg.getAttribute("src") == '/Imagens/menu.png') {
+                menuIconImg.setAttribute("src", "/Imagens/close.png")
+            } else {
+                menuIconImg.setAttribute("src", "/Imagens/menu.png")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
