@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>GetGames</title>
-    <link rel="shortcut icon" href="Imagens/logo.png">
+    <link rel="shortcut icon" href="/Imagens/logo.png">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             </ul>
 
             <div class="menu-icon">
-                <img src="Imagens/menu.png" alt="Menu">
+                <img src="/Imagens/menu.png" alt="Menu">
             </div>
 
         </nav>
@@ -77,10 +77,10 @@
 
         menuIcon.addEventListener('click', () => {
             menu.classList.toggle('ativo');
-            if (menuIconImg.getAttribute("src") == '../Imagens/menu.png') {
-                menuIconImg.setAttribute("src", "../Imagens/close.png")
+            if (menuIconImg.getAttribute("src") == "/Imagens/menu.png") {
+                menuIconImg.setAttribute("src", "/Imagens/close.png")
             } else {
-                menuIconImg.setAttribute("src", "../Imagens/menu.png")
+                menuIconImg.setAttribute("src", "/Imagens/menu.png")
             }
         })
     </script>
